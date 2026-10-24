@@ -1,0 +1,10 @@
+Processing :
+
+Convert the STYX format json into 3 Dataframes : attack, mitigation and relationship. 
+
+We filter out the attacks and mitigations that have been revoked and deprecated.
+We also will just get the references of the attack that comes from MITRE and we just pick the important columns.
+We then do the merge of the 3 dataframes and replace the NaN value to [] for easier future treatment.
+
+Finally, we convert the merged dataframe to a json. Here, we don't have a lot of data, so we prefer to put lisbility above
+performances, otehrwise, parquet would have been used.
