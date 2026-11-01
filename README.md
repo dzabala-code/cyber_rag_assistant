@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-Processing :
-Run main.py to load the attack (from the attack_loader.py): python src/main.py
-
 Convert the STIX format json into 3 Dataframes : attack, mitigation and relationship. 
 
 We filter out the attacks and mitigations that have been revoked and deprecated.
